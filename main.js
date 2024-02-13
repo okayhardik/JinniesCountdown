@@ -29,27 +29,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function changeBackground() {
         const section = document.getElementById('birthdaySection');
-        section.style.backgroundImage = `url('${getRandomImage()}')`;
+        section.style.backgroundImage = `url('${getRandomImage(images)}')`;
     }
-    
+
     function generateImageArray(folderPath, numberOfImages) {
-    const images = [];
-    for (let i = 1; i <= numberOfImages; i++) {
-        images.push(`${folderPath}image${i}.jpg`);
+        const images = [];
+        for (let i = 1; i <= numberOfImages; i++) {
+            images.push(`${folderPath}image${i}.jpg`);
+        }
+        return images;
     }
-    return images;
-    }
-    
+
     function getRandomImage(images) {
-    const randomIndex = Math.floor(Math.random() * images.length);
-    return images[randomIndex];
+        const randomIndex = Math.floor(Math.random() * images.length);
+        return images[randomIndex];
     }
 
-// Usage
-const folderPath = 'assets/images/'; // Path to your images folder
-const numberOfImages = 27;
+    // Usage
+    const folderPath = 'assets/images/'; // Path to your images folder
+    const numberOfImages = 27;
 
-const images = generateImageArray(folderPath, numberOfImages);
+    const images = generateImageArray(folderPath, numberOfImages);
 
     // Initial call to update countdown and background on page load
     updateCountdown();
@@ -58,5 +58,5 @@ const images = generateImageArray(folderPath, numberOfImages);
     // Call updateCountdown every second
     setInterval(updateCountdown, 1000);
     // Call changeBackground every 5 minutes (adjust the interval as needed)
-    setInterval(changeBackground, 30000);
+    setInterval(changeBackground, 300000); // 5 minutes in milliseconds
 });
