@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('seconds').textContent = formatTime(seconds);
         } else {
             // Birthday has passed, update the message
-            document.getElementById('contentContainer').innerHTML = "<p>Happy Birthday, Jinnie!</p>";
+            document.getElementById('message').innerHTML = "<p>Happy Birthday, Jinnie!</p>";
             document.getElementById('countdown').style.display = 'none';
         }
     }
@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Call updateCountdown every second
     setInterval(updateCountdown, 1000);
-    // Call changeBackground every 5 minutes (adjust the interval as needed)
+    // Call changeBackground every 5 minutes
     setInterval(changeBackground, 300000); // 5 minutes in milliseconds
 });
