@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Usage
-    const folderPath = 'assets/images/'; // Path to your images folder
+    const folderPath = 'assets'; // Path to your images folder
     const numberOfImages = 27;
 
     const images = generateImageArray(folderPath, numberOfImages);
