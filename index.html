@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="author" content="Jinnie's Birthday" />
+    <meta name="keywords"
+        content="HTML, CSS, Portfolio, Github, Github pages, Freelancer, Website Developement, JavaScript, PHP, Developer, Tailwind, Bootstrap, VSCode, Birthday Countdown, Birthday Counter, Vanilla CSS, Vanilla JS" />
+    <title>Birthday Countdown</title>
+</head>
+
+<body>
+    <main>
+        <section class="w-full h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('WhatsApp Image 2024-02-13 at 7.58.54 PM.jpeg'); flex items-center justify-center">
+            <div class="backdrop-blur-xl p-8 font-mono flex flex-col items-center justify-center h-full">
+                <div id="dateyear" class="dateyear text-center mt-4 text-3xl font-bold text-red-600"></div>
+                <div id="yearold" class="yearold text-center mt-2 text-7xl font-semibold text-gray-700 underline decoration-double"></div>
+                <div id="message" class="message text-center mt-4 text-4xl text-blue-700 font-semibold">
+                    The countdown is on! <br>Let’s make your birthday celebrations more memorable than ever before this year!
+                </div>
+                <br>
+                <span class="text-center block mb-4 text-4xl text-purple-600">The Day of Jinnie</span>
+                <h1 id="birthdayTime" class="text-5xl font-bold text-gray-800 text-center my-4">Birthday Countdown:</h1>
+
+                <div id="countdown" class="countdown flex justify-center">
+                    <div class="clock text-center mx-2">
+                        <h2 id="days" class="text-6xl font-bold text-red-600">00</h2>
+                        <small class="text-base text-slate-950">days</small>
+                    </div>
+                    <div class="clock text-center mx-2">
+                        <h2 id="hours" class="text-6xl font-bold text-red-600">00</h2>
+                        <small class="text-base text-slate-950">hours</small>
+                    </div>
+                    <div class="clock text-center mx-2">
+                        <h2 id="minutes" class="text-6xl font-bold text-red-600">00</h2>
+                        <small class="text-base text-slate-950">minutes</small>
+                    </div>
+                    <div class="clock text-center mx-2">
+                        <h2 id="seconds" class="text-6xl font-bold text-red-600">00</h2>
+                        <small class="text-base text-slate-950">seconds</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
