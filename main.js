@@ -31,17 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
         const section = document.getElementById('birthdaySection');
         section.style.backgroundImage = `url('${getRandomImage()}')`;
     }
-
-    function getRandomImage() {
-        const images = [
-            'Countdown\WhatsApp Image 2024-02-13 at 7.58.54 PM (1).jpeg',
-            'Countdown\WhatsApp Image 2024-02-13 at 7.58.54 PM.jpeg',
-            // Add more image filenames as needed
-        ];
-
-        const randomIndex = Math.floor(Math.random() * images.length);
-        return images[randomIndex];
+    
+    function generateImageArray(folderPath, numberOfImages) {
+    const images = [];
+    for (let i = 1; i <= numberOfImages; i++) {
+        images.push(`${folderPath}image${i}.jpg`);
     }
+    return images;
+    }
+    
+    function getRandomImage(images) {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    return images[randomIndex];
+    }
+
+// Usage
+const folderPath = 'assets/images/'; // Path to your images folder
+const numberOfImages = 27;
+
+const images = generateImageArray(folderPath, numberOfImages);
 
     // Initial call to update countdown and background on page load
     updateCountdown();
