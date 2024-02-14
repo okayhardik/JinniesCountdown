@@ -11,9 +11,9 @@
         content="HTML, CSS, Portfolio, Github, Github pages, Freelancer, Website Development, JavaScript, PHP, Developer, Tailwind, Bootstrap, VSCode, Birthday Countdown, Birthday Counter, Vanilla CSS, Vanilla JS" />
     <title>Birthday Countdown</title>
     <style>
-        .blur-container {
+        .blur-text {
             backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(8px);
             background-color: rgba(0, 0, 0, 0.5);
             /* Adjust the opacity as needed */
         }
@@ -25,8 +25,8 @@
         <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 bg-center bg-cover bg-no-repeat"
                 style="background-image: url('assets/jinnie_tera_dil_lutiya-20240213-0026.jpg');"></div>
-            <div class="absolute inset-0 w-full h-full blur-container z-10">
-                <div class="relative p-4 md:p-8 font-mono text-white text-center">
+            <div class="absolute inset-0 w-full h-full z-10">
+                <div class="relative p-4 md:p-8 font-mono text-white text-center blur-text">
                     <div id="dateyear"
                         class="dateyear text-center mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-red-600">
                     </div>
@@ -34,7 +34,7 @@
                         class="yearold text-center mt-2 text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-gray-700 underline decoration-double">
                     </div>
                     <div id="message"
-                        class="message text-center mt-2 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-blue-700 font-bold">
+                        class="message text-center mt-2 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-blue-700 font-semibold">
                         The countdown is on! <br>Let’s make your birthday celebrations more memorable than ever before this
                         year!
                     </div>
