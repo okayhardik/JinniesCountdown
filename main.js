@@ -51,12 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const images = generateImageArray(folderPath, numberOfImages);
 
-    // Initial call to update countdown and background on page load
     updateCountdown();
     changeBackground();
-
-    // Call updateCountdown every second
-    setInterval(updateCountdown, 100);
-    // Call changeBackground every 5 minutes
-    setInterval(changeBackground, 300000); // 5 minutes in milliseconds
+    setInterval(updateCountdown, 10);
+    setInterval(changeBackground, 86400000);
 });
