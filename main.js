@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     changeBackground();
 
     // Call updateCountdown every second
-    setInterval(updateCountdown, 1000);
+    setInterval(updateCountdown, 100);
     // Call changeBackground every 5 minutes
     setInterval(changeBackground, 300000); // 5 minutes in milliseconds
 });
